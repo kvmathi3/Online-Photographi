@@ -1,0 +1,1055 @@
+/* ========================================
+   RESET
+======================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f8f8f8;
+    color: #333;
+}
+
+
+/* ========================================
+   NAVBAR
+======================================== */
+
+.navbar {
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 60px;
+
+    background: white;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
+    position: sticky;
+    top: 0;
+
+    z-index: 100;
+}
+
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    transition: 0.3s;
+}
+
+
+.nav-links a:hover {
+    color: #e91e63;
+}
+
+
+.nav-links a.active {
+    color: #e91e63;
+    font-weight: bold;
+}
+
+
+.register-btn {
+    background: #e91e63;
+
+    color: white !important;
+
+    padding: 10px 20px;
+
+    border-radius: 6px;
+}
+
+
+.register-btn:hover {
+    background: #c2185b;
+}
+
+
+/* ========================================
+   REGISTER PAGE
+======================================== */
+
+.container {
+
+    width: 450px;
+
+    max-width: 90%;
+
+    margin: 50px auto;
+
+    padding: 35px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+}
+
+
+.container h2 {
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+
+    color: #e91e63;
+}
+
+
+.container > p {
+
+    color: #777;
+
+    margin-bottom: 25px;
+}
+
+
+/* ========================================
+   FORM
+======================================== */
+
+#registerForm {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    text-align: left;
+}
+
+
+#registerForm input,
+#registerForm select {
+
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    background: white;
+
+    transition: 0.3s;
+}
+
+
+#registerForm input:focus,
+#registerForm select:focus {
+
+    border-color: #e91e63;
+
+    box-shadow:
+        0 0 0 2px rgba(233, 30, 99, 0.1);
+}
+
+
+/* ========================================
+   LABEL
+======================================== */
+
+#registerForm label {
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    color: #555;
+
+    margin-bottom: -8px;
+}
+
+
+/* ========================================
+   REGISTER BUTTON
+======================================== */
+
+#registerForm button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #e91e63;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    margin-top: 5px;
+}
+
+
+#registerForm button:hover {
+
+    background: #c2185b;
+
+    transform: translateY(-2px);
+}
+
+
+/* ========================================
+   MESSAGE
+======================================== */
+
+#message {
+
+    margin-top: 20px;
+
+    font-weight: bold;
+
+    color: #e91e63;
+}
+
+
+/* ========================================
+   LOGIN LINK
+======================================== */
+
+.container a {
+
+    color: #e91e63;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.container a:hover {
+
+    text-decoration: underline;
+}
+
+
+/* ========================================
+   HOME HERO
+======================================== */
+
+.hero {
+
+    min-height: 500px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-align: center;
+
+    background:
+        linear-gradient(
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+        ),
+        url("https://images.unsplash.com/photo-1519741497674-611481863552");
+
+    background-size: cover;
+
+    background-position: center;
+}
+
+
+.hero-content {
+
+    color: white;
+
+    max-width: 700px;
+}
+
+
+.hero-content h1 {
+
+    font-size: 48px;
+
+    margin-bottom: 20px;
+}
+
+
+.hero-content p {
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-btn {
+
+    display: inline-block;
+
+    padding: 14px 28px;
+
+    background: #e91e63;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 6px;
+}
+
+
+/* ========================================
+   SERVICES
+======================================== */
+
+.services {
+
+    padding: 60px 40px;
+
+    text-align: center;
+}
+
+
+.services h2 {
+
+    font-size: 32px;
+
+    margin-bottom: 40px;
+}
+
+
+.service-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.service-card {
+
+    width: 280px;
+
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.1);
+}
+
+
+.service-card h3 {
+
+    margin-bottom: 15px;
+}
+
+
+.service-card p {
+
+    color: #666;
+
+    line-height: 1.5;
+}
+
+
+/* ========================================
+   PAGE HEADER
+======================================== */
+
+.page-header {
+
+    text-align: center;
+
+    padding: 60px 20px 40px;
+
+    background: #fff0f5;
+}
+
+
+.page-header h1 {
+
+    font-size: 38px;
+
+    margin-bottom: 15px;
+}
+
+
+.page-header p {
+
+    font-size: 18px;
+
+    color: #666;
+}
+
+
+/* ========================================
+   PHOTOGRAPHERS
+======================================== */
+
+.photographers {
+
+    padding: 50px 40px;
+}
+
+
+.photographer-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(260px, 1fr));
+
+    gap: 30px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.photographer-card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.photographer-card:hover {
+
+    transform: translateY(-8px);
+}
+
+
+.photographer-card img {
+
+    width: 100%;
+
+    height: 230px;
+
+    object-fit: cover;
+}
+
+
+.photographer-info {
+
+    padding: 20px;
+}
+
+
+.photographer-info h2 {
+
+    margin-bottom: 12px;
+}
+
+
+.photographer-info p {
+
+    margin: 8px 0;
+
+    color: #666;
+}
+
+
+.photographer-info .price {
+
+    color: #e91e63;
+
+    font-size: 18px;
+
+    font-weight: bold;
+}
+
+
+.photographer-info button {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #e91e63;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.photographer-info button:hover {
+
+    background: #c2185b;
+}
+
+
+/* ========================================
+   EVENTS
+======================================== */
+
+.events {
+
+    padding: 50px 40px;
+}
+
+
+.event-container {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+    gap: 30px;
+
+    max-width: 1200px;
+
+    margin: auto;
+}
+
+
+.event-card {
+
+    background: white;
+
+    border-radius: 12px;
+
+    overflow: hidden;
+
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.12);
+
+    transition: 0.3s;
+}
+
+
+.event-card:hover {
+
+    transform: translateY(-8px);
+}
+
+
+.event-card img {
+
+    width: 100%;
+
+    height: 220px;
+
+    object-fit: cover;
+}
+
+
+.event-info {
+
+    padding: 20px;
+}
+
+
+.event-info h2 {
+
+    margin-bottom: 12px;
+}
+
+
+.event-info p {
+
+    color: #666;
+
+    line-height: 1.5;
+}
+
+
+.event-info button {
+
+    width: 100%;
+
+    margin-top: 15px;
+
+    padding: 12px;
+
+    border: none;
+
+    border-radius: 6px;
+
+    background: #e91e63;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+
+.event-info button:hover {
+
+    background: #c2185b;
+}
+
+
+/* ========================================
+   MOBILE
+======================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+
+        padding: 0 20px;
+
+    }
+
+    .nav-links {
+
+        gap: 12px;
+
+    }
+
+    .nav-links a {
+
+        font-size: 13px;
+
+    }
+
+    .logo {
+
+        font-size: 20px;
+
+    }
+
+    .container {
+
+        width: 95%;
+
+        padding: 25px;
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 35px;
+
+    }
+
+}
+
+/* ========================================
+   LOGIN PAGE
+======================================== */
+
+.login-container {
+
+    width: 420px;
+
+    max-width: 90%;
+
+    margin: 70px auto;
+
+    padding: 40px;
+
+    background: white;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 5px 25px rgba(0, 0, 0, 0.12);
+
+    text-align: center;
+}
+
+
+.login-container h2 {
+
+    color: #e91e63;
+
+    font-size: 28px;
+
+    margin-bottom: 10px;
+}
+
+
+.login-container > p {
+
+    color: #777;
+
+    margin-bottom: 25px;
+
+    line-height: 1.5;
+}
+
+
+#loginForm {
+
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 15px;
+
+    text-align: left;
+}
+
+
+#loginForm input {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+#loginForm input:focus {
+
+    border-color: #e91e63;
+
+    box-shadow:
+        0 0 0 2px rgba(233, 30, 99, 0.1);
+}
+
+
+#loginForm button {
+
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background: #e91e63;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+#loginForm button:hover {
+
+    background: #c2185b;
+
+    transform: translateY(-2px);
+}
+
+
+#loginMessage {
+
+    margin-top: 20px;
+
+    color: #e91e63;
+
+    font-weight: bold;
+}
+
+
+.new-user {
+
+    margin-top: 20px;
+}
+
+
+.login-container a {
+
+    color: #e91e63;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+/* ================= INSTAGRAM BUTTON ================= */
+
+/* ================= INSTAGRAM BUTTON ================= */
+
+.instagram-button {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #e91e63;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.instagram-button:hover {
+    background: #c2185b;
+    transform: translateY(-2px);
+}
+
+/* ================================
+   FOOTER
+================================= */
+
+.footer {
+    background: #222;
+    color: white;
+    margin-top: 50px;
+    padding-top: 45px;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 35px;
+}
+
+.footer-section h3 {
+    color: #e91e63;
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.footer-section p {
+    color: #ccc;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: #e91e63;
+    padding-left: 5px;
+}
+
+
+/* FOOTER BOTTOM */
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 35px;
+    padding: 20px 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-section a:hover {
+        padding-left: 0;
+    }
+
+}
+
+/* ================================
+   FOOTER
+================================ */
+
+.footer {
+    background: #222;
+    color: white;
+    margin-top: 60px;
+    padding-top: 45px;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 35px;
+}
+
+.footer-section h3 {
+    color: #e91e63;
+    margin-bottom: 18px;
+    font-size: 20px;
+}
+
+.footer-section p {
+    color: #ccc;
+    line-height: 1.7;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    display: block;
+    color: #ccc;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: #e91e63;
+    padding-left: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #444;
+    margin-top: 35px;
+    padding: 20px 5%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #aaa;
+    font-size: 13px;
+}
+
+
+/* TABLET */
+@media (max-width: 900px) {
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* MOBILE */
+@media (max-width: 600px) {
+
+    .footer-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer-section a:hover {
+        padding-left: 0;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+}

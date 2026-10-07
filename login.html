@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SnapBook - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- NAVBAR -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            📸 SnapBook
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="photographers.html">
+                Photographers
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+            <a href="login.html" class="active">
+                Login
+            </a>
+
+            <a href="register.html"
+               class="register-btn">
+                Register
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- LOGIN BOX -->
+
+    <div class="login-container">
+
+        <h2>📸 Welcome Back!</h2>
+
+        <p>
+            Login to manage your photography booking
+        </p>
+
+
+        <form id="loginForm">
+
+
+            <!-- NAME -->
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+                required
+            >
+
+
+            <!-- EMAIL -->
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                required
+            >
+
+
+            <!-- PASSWORD -->
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter Password"
+                required
+            >
+
+
+            <!-- LOGIN BUTTON -->
+
+            <button type="submit">
+                Login
+            </button>
+
+        </form>
+
+
+        <!-- MESSAGE -->
+
+        <p id="loginMessage"></p>
+
+
+        <p class="new-user">
+
+            Don't have an account?
+
+            <a href="register.html">
+                Register Now
+            </a>
+
+        </p>
+
+    </div>
+
+
+    <script src="login.js"></script>
+
+</body>
+
+</html>

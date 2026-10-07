@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>SnapBook - Register</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+    <!-- ================= NAVBAR ================= -->
+
+    <nav class="navbar">
+
+        <div class="logo">
+            📸 SnapBook
+        </div>
+
+        <div class="nav-links">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="photographers.html">
+                Photographers
+            </a>
+
+            <a href="events.html">
+                Events
+            </a>
+
+            <a href="login.html">
+                Login
+            </a>
+
+            <a href="register.html"
+               class="register-btn">
+                Register
+            </a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- ================= REGISTER FORM ================= -->
+
+    <div class="container">
+
+        <h2>📸 Book Your Photographer</h2>
+
+        <p>
+            Register and book your photography service
+        </p>
+
+
+        <form id="registerForm">
+
+
+            <!-- NAME -->
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Enter Name"
+                required
+            >
+
+
+            <!-- EMAIL -->
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Enter Email"
+                required
+            >
+
+
+            <!-- PHONE -->
+
+            <input
+                type="tel"
+                id="phone"
+                placeholder="Enter Phone Number"
+                required
+            >
+
+
+            <!-- PASSWORD -->
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Create Password"
+                required
+            >
+
+
+            <!-- EVENT -->
+
+            <label>
+                Select Event
+            </label>
+
+            <select id="eventType" required>
+
+                <option value="">
+                    Select Event
+                </option>
+
+                <option value="Wedding">
+                    Wedding
+                </option>
+
+                <option value="Birthday">
+                    Birthday
+                </option>
+
+                <option value="Engagement">
+                    Engagement
+                </option>
+
+                <option value="Baby Shower">
+                    Baby Shower
+                </option>
+
+                <option value="Corporate Event">
+                    Corporate Event
+                </option>
+
+                <option value="Pre Wedding">
+                    Pre Wedding
+                </option>
+
+                <option value="Other">
+                    Other
+                </option>
+
+            </select>
+
+
+            <!-- PHOTOGRAPHER -->
+
+            <label>
+                Select Photographer
+            </label>
+
+            <select id="photographer" required>
+
+                <option value="">
+                    Select Photographer
+                </option>
+
+                <option value="Arun Photography">
+                    Arun Photography
+                </option>
+
+                <option value="Pixel Studio">
+                    Pixel Studio
+                </option>
+
+                <option value="Creative Lens">
+                    Creative Lens
+                </option>
+
+                <option value="Moments Studio">
+                    Moments Studio
+                </option>
+
+            </select>
+
+
+            <!-- DATE -->
+
+            <label>
+                Event Date
+            </label>
+
+            <input
+                type="date"
+                id="eventDate"
+                required
+            >
+
+
+            <!-- LOCATION -->
+
+            <input
+                type="text"
+                id="location"
+                placeholder="Event Location"
+                required
+            >
+
+
+            <!-- PACKAGE -->
+
+            <label>
+                Select Photography Package
+            </label>
+
+            <select id="package" required>
+
+                <option value="">
+                    Select Package
+                </option>
+
+                <option value="Basic">
+                    Basic - ₹5,000
+                </option>
+
+                <option value="Standard">
+                    Standard - ₹10,000
+                </option>
+
+                <option value="Premium">
+                    Premium - ₹20,000
+                </option>
+
+                <option value="Luxury">
+                    Luxury - ₹30,000
+                </option>
+
+            </select>
+
+
+            <!-- HOURS -->
+
+            <input
+                type="number"
+                id="hours"
+                placeholder="Number of Hours"
+                min="1"
+                required
+            >
+
+
+            <!-- SUBMIT -->
+
+            <button type="submit">
+                Register & Book 📸
+            </button>
+
+        </form>
+
+
+        <!-- MESSAGE -->
+
+        <p id="message"></p>
+
+
+        <p>
+            Already have an account?
+            <a href="login.html">
+                Login
+            </a>
+        </p>
+
+    </div>
+
+
+    <!-- ================= JAVASCRIPT ================= -->
+
+    <script src="register.js"></script>
+
+</body>
+
+</html>
